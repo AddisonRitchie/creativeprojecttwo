@@ -1,9 +1,62 @@
+/*style for creative project two, museum and art*/
+
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: lightblue;
+  background-color: #262626;
   color: white;
   text-align: center;
+}
+
+.header h1 {
+    background-color: #262626;
+    color: lightgrey;
+    padding: 2%;
+}
+
+.header p {
+    /*padding-left: 2%;*/
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.header form {
+    padding-top: 3%;
+    /*padding-left: 5%;*/
+    /*padding-bottom: 3%;*/
+    text-align: center;
+}
+
+/*#artResult {*/
+/*    margin: auto;*/
+/*    padding: 3%;*/
+/*}*/
+
+/* Image Grid */
+#artResult {
+    column-count: 2;
+    column-gap: .5em;
+    padding: 2%;
+      margin-left: auto;
+  margin-right: auto;
+    padding-bottom: 10%;
+
+}
+
+.singleArt {
+  background-color: #eee;
+  display: inline-block;
+  margin: .5em .5em .5em;
+  width: 100%;
+
+}
+
+.singleArt img {
+    margin: auto;
+}
+.singleArt p {
+    color: grey;
 }
