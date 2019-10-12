@@ -2,13 +2,17 @@
 
 
 .footer {
-  /*position: fixed;*/
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #262626;
   color: white;
   text-align: center;
+}
+
+.footer a:link {
+    color: lightgrey;
 }
 
 .header h1 {
@@ -88,4 +92,15 @@
     text-align: center;
     font-size: large;
 
+}
+
+/*a:link, a:active {*/
+/*    text-decoration: none;*/
+    
+/*}*/
+a:hover {
+    color: black;
+}
+a:active {
+    color: gray;
 }

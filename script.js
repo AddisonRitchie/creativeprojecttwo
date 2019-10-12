@@ -38,6 +38,19 @@ document.getElementById("searchInput").addEventListener("click", function(event)
                         results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].title + '"><h3>' + json.artObjects[i].title + '</h3>';
                         results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].principalOrFirstMaker + '"><p>' + json.artObjects[i].principalOrFirstMaker + '</p>';
                         
+                        // //Trying to get date
+                        // var id = json.artObjects[i].objectNumber;
+                        // var url2 = 'https://www.rijksmuseum.nl/api/en/collection/' + id + '?key=SmJJXRrI&format=json';
+                        // //GET /api/[culture]/collection/[object-number] 
+                        // //https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
+                        // fetch(url2) //send request to get date 
+                        //     .then(function(response) {
+                        //         return response.json();
+                        //     }).then(function(json) {
+                        //         console.log(json);
+                        //         result += '<p>' + json.artObjects[i].dating.presentingDate + '</p>';
+                        //     });
+                            
                     }
                     else {
                         results += '<h2> Image not available </h2>'
