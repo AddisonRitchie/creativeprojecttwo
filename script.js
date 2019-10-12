@@ -35,13 +35,13 @@ document.getElementById("searchInput").addEventListener("click", function(event)
 
                     if (json.artObjects[i].hasImage === true) {
                         results += '<a href="' + json.artObjects[i].webImage.url.replace("s0", "s256") + '"> <img src="' + json.artObjects[i].webImage.url.replace("s0", "s256") + '"/></a>';
-                        results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].title + '"><p>' + json.artObjects[i].title + '</p>';
+                        results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].title + '"><h3>' + json.artObjects[i].title + '</h3>';
                         results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].principalOrFirstMaker + '"><p>' + json.artObjects[i].principalOrFirstMaker + '</p>';
                         
                     }
                     else {
-                        results += '<p> Image not available </p>'
-                        results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].title + '"><p>' + json.artObjects[i].title + '</p>';
+                        results += '<h2> Image not available </h2>'
+                        results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].title + '"><h3>' + json.artObjects[i].title + '</h3>';
                         results += '<a href="https://www.rijksmuseum.nl/nl/zoeken/objecten?q=' + json.artObjects[i].principalOrFirstMaker + '"><p>' + json.artObjects[i].principalOrFirstMaker + '</p>';
                     }
                     results += '</div>';
